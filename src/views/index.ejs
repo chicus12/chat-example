@@ -1,0 +1,57 @@
+<% include head %>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+
+<div id="chatbox">
+  <div id="friendslist">
+    <div id="topmenu">
+      <span class="friends"></span>
+      <span class="chats"></span>
+      <span class="history <% if (currentUser && currentUser.status === 'away') { %>awayh<% } %>"></span>
+    </div>
+
+    <div id="friends">
+      <% users.forEach(function(user) { %>
+        <div class="friend" id="<%= user.id %>">
+          <img src="<%= user.images.avatar %>" />
+          <p>
+            <strong><%= user.name %></strong>
+            <span><%= user.email %></span>
+          </p>
+          <div class="status <%= user.status %>"></div>
+        </div>
+      <% }); %>
+
+      <div id="search">
+        <input type="text" id="searchfield" value="Search contacts..." />
+      </div>
+
+    </div>
+
+  </div>
+
+  <div id="chatview" class="p1">
+    <div id="profile">
+
+      <div id="close">
+        <div class="cy"></div>
+        <div class="cx"></div>
+      </div>
+
+      <p>Miro Badev</p>
+      <span>miro@badev@gmail.com</span>
+      <div id="video-preview"></div>
+    </div>
+
+    <div id="chat-messages">
+
+    </div>
+
+    <div id="sendmessage">
+      <input type="text" id="new-message" value="Send message..." />
+      <input type="hidden" id="user">
+      <button id="video"></button>
+    </div>
+
+  </div>
+</div>
+<% include footer %>

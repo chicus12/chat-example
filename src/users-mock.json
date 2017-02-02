@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "name": "Miro Badev",
+    "username": "miro",
+    "avatarSrc": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/1_copy.jpg",
+    "timelineSrc": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/timeline1.png",
+    "status": "available",
+    "email": "mirobadev@gmail.com"
+  },
+
+  {
+    "id": 2,
+    "name": "Martin Joseph",
+    "username": "martin",
+    "avatarSrc": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/2_copy.jpg",
+    "timelineSrc": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/timeline1.png",
+    "status": "away",
+    "email": "marjoseph@gmail.com"
+  },
+
+  {
+    "id": 3,
+    "name": "Tomas Kennedy",
+    "username": "tomas",
+    "avatarSrc": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/3_copy.jpg",
+    "timelineSrc": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/3_copy.jpg",
+    "status": "away",
+    "email": "tomaskennedy@gmail.com"
+  },
+
+  {
+    "id": 4,
+    "name": "Enrique Sutton",
+    "username": "enrique",
+    "avatarSrc": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/4_copy.jpg",
+    "timelineSrc": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/3_copy.jpg",
+    "status": "inactive",
+    "email": "enriquesutton@gmail.com"
+  },
+
+  {
+    "id": 5,
+    "name": "Darnell Strickland",
+    "username": "darnell",
+    "avatarSrc": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/5_copy.jpg",
+    "timelineSrc": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/3_copy.jpg",
+    "status": "inactive",
+    "email": "darnellstrickland@gmail.com"
+  }
+]
