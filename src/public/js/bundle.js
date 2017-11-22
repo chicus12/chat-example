@@ -5326,7 +5326,7 @@ function Sizzle( selector, context, results, seed ) {
 						if ( (elem = context.getElementById( m )) ) {
 
 							// Support: IE, Opera, Webkit
-							// TODO: identify versions
+							// TODO: identify versions id:0 gh:1
 							// getElementById can match elements by name instead of ID
 							if ( elem.id === m ) {
 								results.push( elem );
@@ -5340,7 +5340,7 @@ function Sizzle( selector, context, results, seed ) {
 					} else {
 
 						// Support: IE, Opera, Webkit
-						// TODO: identify versions
+						// TODO: identify versions id:2 gh:3
 						// getElementById can match elements by name instead of ID
 						if ( newContext && (elem = newContext.getElementById( m )) &&
 							contains( context, elem ) &&
@@ -7100,7 +7100,7 @@ function matcherFromGroupMatchers( elementMatchers, setMatchers ) {
 			matchedCount += i;
 
 			// Apply set filters to unmatched elements
-			// NOTE: This can be skipped if there are no unmatched elements (i.e., `matchedCount`
+			// NOTE: This can be skipped if there are no unmatched elements (i.e., `matchedCount` id:4 gh:5
 			// equals `i`), unless we didn't visit _any_ elements in the above loop because we have
 			// no element matchers and no seed.
 			// Incrementing an initially-string "0" `i` allows `i` to remain a string only in that
@@ -8782,7 +8782,7 @@ jQuery.extend( {
 		dataUser.remove( elem, name );
 	},
 
-	// TODO: Now that all calls to _data and _removeData have been replaced
+	// TODO: Now that all calls to _data and _removeData have been replaced id:6 gh:7
 	// with direct calls to dataPriv methods, these can be deprecated.
 	_data: function( elem, name, data ) {
 		return dataPriv.access( elem, name, data );
@@ -16797,7 +16797,7 @@ function localeMonthsParse (monthName, format, strict) {
         this._shortMonthsParse = [];
     }
 
-    // TODO: add sorting
+    // TODO: add sorting id:10 gh:11
     // Sorting makes sure if one month (or abbr) is a prefix of another
     // see sorting in computeMonthsParse
     for (i = 0; i < 12; i++) {
@@ -16837,7 +16837,7 @@ function setMonth (mom, value) {
             value = toInt(value);
         } else {
             value = mom.localeData().monthsParse(value);
-            // TODO: Another silent failure?
+            // TODO: Another silent failure? id:1 gh:2
             if (!isNumber(value)) {
                 return mom;
             }
@@ -17688,7 +17688,7 @@ function chooseLocale(names) {
 
 function loadLocale(name) {
     var oldLocale = null;
-    // TODO: Find a better way to register and load all the locales in Node
+    // TODO: Find a better way to register and load all the locales in Node id:3 gh:4
     if (!locales[name] && (typeof module !== 'undefined') &&
             module && module.exports) {
         try {
@@ -18066,7 +18066,7 @@ function dayOfYearFromWeekInfo(config) {
         dow = 1;
         doy = 4;
 
-        // TODO: We need to take the current isoWeekYear, but that depends on
+        // TODO: We need to take the current isoWeekYear, but that depends on id:5 gh:6
         // how we interpret now (local, utc, fixed offset). So create
         // a now version of current config (take local/utc/offset flags, and
         // create now).
@@ -18120,7 +18120,7 @@ hooks.ISO_8601 = function () {};
 
 // date from string and format string
 function configFromStringAndFormat(config) {
-    // TODO: Move this to another part of the creation flow to prevent circular deps
+    // TODO: Move this to another part of the creation flow to prevent circular deps id:7 gh:8
     if (config._f === hooks.ISO_8601) {
         configFromISO(config);
         return;
@@ -18412,7 +18412,7 @@ function pickBy(fn, moments) {
     return res;
 }
 
-// TODO: Use [].sort instead?
+// TODO: Use [].sort instead? id:11 gh:12
 function min () {
     var args = [].slice.call(arguments, 0);
 
@@ -18808,7 +18808,7 @@ function momentsDifference(base, other) {
     return res;
 }
 
-// TODO: remove 'name' arg after deprecation is removed
+// TODO: remove 'name' arg after deprecation is removed id:9 gh:10
 function createAdder(direction, name) {
     return function (val, period) {
         var dur, tmp;
@@ -19913,7 +19913,7 @@ function as (units) {
     }
 }
 
-// TODO: Use this.as('ms')?
+// TODO: Use this.as('ms')? id:8 gh:9
 function valueOf$1 () {
     return (
         this._milliseconds +
